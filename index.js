@@ -1,6 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
 import userRouter from "./routes/auth.route.js"
+import dotenv from "dotenv"
+
+dotenv.config({
+    path:"./.env",
+})
 
 const app=express();
 const port=3000;

@@ -21,6 +21,13 @@ export const registerUser=async(req,res)=>{
 
         const token=createToken(user._id, user.email);
 
+        res.status(201).json({
+            success:true,
+            message:"User created successfully",
+            user,
+            token
+        })
+
     }catch(error){
         res.status(400).json({
             success:false,
