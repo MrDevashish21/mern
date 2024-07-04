@@ -1,19 +1,21 @@
 {
-  "name": "test",
+  "name": "mern",
   "version": "1.0.0",
-  "description": "It is a Test Website",
+  "description": "project",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "keywords": [
-    "sample"
+    "dev"
   ],
   "author": "Devashish",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
-    "mongoose": "^8.4.4"
+    "mongoose": "^8.4.4",
+    "nodemon": "^3.1.4"
   }
 }
